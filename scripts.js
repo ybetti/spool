@@ -11,7 +11,7 @@ function drawShape(shape) {
     // 初期位置を設定
     shapeElement.style.left = '50%';
     shapeElement.style.top = '50%';
-    shapeElement.style.transform = 'translate(-50%, -50%)';
+    shapeElement.style.transform = 'translate(0%, 0%)';
 
     // ドラッグイベントを追加
     shapeElement.addEventListener('mousedown', onMouseDown);
