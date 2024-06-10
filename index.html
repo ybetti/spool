@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>線と画像を呼び出すWebアプリ</title>
-    <style>
-        #canvas {
-            border: 1px solid black;
-        }
-        .button-container {
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>線と画像を呼び出すWebアプリ</h1>
@@ -20,7 +13,7 @@
         <button onclick="showImage()">画像を表示</button>
     </div>
     <canvas id="canvas" width="500" height="500"></canvas>
-    <img id="myImage" src="path/to/your/image.jpg" style="display: none;" alt="登録画像">
+    <img id="myImage" src="path/to/your/image.jpg" alt="登録画像" style="display: none;">
     <script src="app.js"></script>
 </body>
 </html>
