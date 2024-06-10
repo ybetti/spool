@@ -13,7 +13,7 @@ function drawLine() {
         y1: 50,
         x2: 450,
         y2: 450,
-        color: 'red',
+        color: 'black',
         width: 2
     };
     elements.push(line);
