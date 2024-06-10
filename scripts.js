@@ -21,13 +21,8 @@ function drawShape(shape) {
 
 function onMouseDown(event) {
     currentShape = event.target;
-
-    // 初期のトランスフォームをリセットして位置を正確に計算
-    currentShape.style.transform = 'translate(0, 0)';
-    
-    const rect = currentShape.getBoundingClientRect();
-    offsetX = event.clientX - rect.left;
-    offsetY = event.clientY - rect.top;
+    offsetX = event.clientX - currentShape.getBoundingClientRect().left;
+    offsetY = event.clientY - currentShape.getBoundingClientRect().top;
 
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup', onMouseUp);
@@ -41,14 +36,11 @@ function onMouseMove(event) {
 
     currentShape.style.left = `${x}px`;
     currentShape.style.top = `${y}px`;
+    currentShape.style.transform = 'translate(0, 0)';
 }
 
 function onMouseUp() {
-    if (currentShape) {
-        // 再度トランスフォームを設定
-        currentShape.style.transform = 'translate(-50%, -50%)';
-    }
-    currentShape = null;
     document.removeEventListener('mousemove', onMouseMove);
     document.removeEventListener('mouseup', onMouseUp);
+    currentShape = null;
 }
