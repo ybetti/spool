@@ -11,7 +11,7 @@ function drawLine() {
     ctx.beginPath();
     ctx.moveTo(50, 50);
     ctx.lineTo(450, 450);
-    ctx.strokeStyle = 'red';
+    ctx.strokeStyle = 'black';
     ctx.lineWidth = 2;
     ctx.stroke();
 }
