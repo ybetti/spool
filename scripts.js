@@ -9,9 +9,9 @@ function drawShape(shape) {
     shapeElement.classList.add('shape', shape);
 
     // 初期位置を設定
-    shapeElement.style.left = '50%';
-    shapeElement.style.top = '50%';
-    shapeElement.style.transform = 'translate(-50%, -50%)';
+    shapeElement.style.left = '0%';
+    shapeElement.style.top = '0%';
+    shapeElement.style.transform = 'translate(0%, 0%)';
 
     // ドラッグイベントを追加
     shapeElement.addEventListener('mousedown', onMouseDown);
