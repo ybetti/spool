@@ -23,7 +23,7 @@ function drawLine() {
 // 画像を表示する関数
 function showImage() {
     const img = new Image();
-    img.src = 'path/to/your/image.jpg';  // ここで画像のパスを指定
+    img.src = 'C:\Users\y.urabe\Desktop\画像2.png';  // ここで画像のパスを指定
     img.onload = function() {
         const imageElement = {
             type: 'image',
